@@ -336,7 +336,7 @@ p#id-selector-2 {
     }
 }
 
-.flex-container {
+.flex-container-vertically {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -358,14 +358,14 @@ p#id-selector-2 {
     color: white;
 }
 
-.flex-container {
+.flex-container-horizontally {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
 }
 
-.flex-container {
+.flex-container-horizontally2 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -373,7 +373,7 @@ p#id-selector-2 {
     justify-content: center;
 }
 
-.flex-container {
+.flex-container-horizontally3 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -381,7 +381,7 @@ p#id-selector-2 {
     justify-content: end;
 }
 
-.flex-container {
+.flex-container-horizontally4 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -389,7 +389,7 @@ p#id-selector-2 {
     justify-content: space-around;
 }
 
-.flex-container {
+.flex-container-horizontally5 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -397,7 +397,7 @@ p#id-selector-2 {
     justify-content: space-between;
 }
 
-.flex-container {
+.flex-container-vertically {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -406,7 +406,7 @@ p#id-selector-2 {
     align-items: flex-start;
 }
 
-.flex-container {
+.flex-container-vertically2 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -415,7 +415,7 @@ p#id-selector-2 {
     align-items: center;
 }
 
-.flex-container {
+.flex-container-vertically3 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
@@ -424,43 +424,10 @@ p#id-selector-2 {
     /*align-items: center;*/
 }
 
-.flex-container > .flex-box {
+.flex-container-vertically > .flex-box {
     flex-basis: 100%;
 }
 
-@media (min-width: 0px)
-and (max-width: 600px) {
-    body {
-        background-color: yellow;
-    }
-    .media-query {
-        background-color: red;
-        color: white;
-    }
-}
-
-@media (min-width: 600px)
-and (max-width: 1200px) {
-    body {
-        background-color: blue;
-        color: white;
-    }
-    .media-query {
-        background-color: yellow;
-        color: black;
-    }
-}
-
-@media (min-width: 0px)
-and (max-width: 600px) {
-    body {
-        background-color: yellow;
-    }
-    .media-query {
-        background-color: red;
-        color: white;
-    }
-}
 @media (min-width: 600px)
 and (max-width: 1200px) {
     body {
@@ -478,11 +445,23 @@ and (max-width: 1800px) {
         background-color: red;
         color: white;
     }
-    .media-query {
+    .media-query2 {
         background-color: blue;
         color: white;
     }
 }
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query3 {
+        background-color: red;
+        color: white;
+    }
+}
+
 
 
 
