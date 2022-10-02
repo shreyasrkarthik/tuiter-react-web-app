@@ -290,6 +290,18 @@ p#id-selector-2 {
     color: white;
 }
 
+.custom-gradient {
+    background: linear-gradient(red, green);
+    width: 200px;
+    height: 200px;
+}
+
+.custom-gradient2 {
+    background: radial-gradient(at bottom right, blue, pink);
+    width: 200px;
+    height: 200px;
+}
+
 .animation-keyframes {
     position: relative;
     top: 0px;
