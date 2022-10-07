@@ -1,0 +1,15 @@
+.wd-brd {
+    border: 1px solid #dee2e6;
+}
+
+.wd-btn-radius {
+    border-radius: 20px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
