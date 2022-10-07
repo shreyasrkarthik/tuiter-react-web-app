@@ -169,11 +169,11 @@ p#id-selector-2 {
     z-index: 10;
 }
 
-.float-left {
+.wd-float-left {
     float: left;
 }
 
-.float-right {
+.wd-float-right {
     float: right;
     height: 100px;
 }

@@ -3,128 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="index.css"
-          rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
 </head>
-<body style="background-color: black">
-    <div style="background-color: darkgrey" id="A">
-        <input class="wd-tuiter-search-box" placeholder="Search Tuiter" type="text"/>
-        <a href="explore-setting.html" class="wd-tuiter-settings">
-            &#x2699;
-        </a>
-    </div>
-
-    <div id="B">
-        <table class="wd-tuiter-navigation-bar" >
-            <thead>
-            <tr>
-                <th class="wd-tuiter-navigation-bar-active wd-tuiter-navigation-bar-table-header"><a href="#">For you</a></th>
-                <th class="wd-tuiter-navigation-bar-inactive wd-tuiter-navigation-bar-table-header"><a href="#">Trending</a></th>
-                <th class="wd-tuiter-navigation-bar-inactive wd-tuiter-navigation-bar-table-header"><a href="#">COVID-19</a></th>
-                <th class="wd-tuiter-navigation-bar-inactive wd-tuiter-navigation-bar-table-header"><a href="#">News</a></th>
-                <th class="wd-tuiter-navigation-bar-inactive wd-tuiter-navigation-bar-table-header"><a href="#">Sports</a></th>
-                <th class="wd-tuiter-navigation-bar-inactive wd-tuiter-navigation-bar-table-header"><a href="#">Entertainment</a></th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td><div class="wd-tuiter-active-link-underline"></div></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <hr />
-    <div id="C">
-        <div class="wd-trending-post wd-tuiter-suggested-post">
-            <div class="wd-tuiter-author-right-end">
-                <span class="wd-dot"></span>
-                <span class="wd-dot"></span>
-                <span class="wd-dot"></span>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-4 pt-2 pb-2" id="sidebar">
+                <div class="row">
+                    <div class="wd-brd p-2 border-top-2">
+                        <i class="ms-2 fa-ice-cream wd-float-left mt-2"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-home wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Home</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0 bg-primary text-white">
+                        <i class="fa-solid fa-hashtag wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Explore</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-bell wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Notifications</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-envelope wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Messages</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-bookmark wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Bookmarks</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-list wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Lists</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-user wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">Profile</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd pt-2 pb-2 ps-2 border-top-0">
+                        <i class="fa-solid fa-ellipsis-h wd-float-left mt-2"></i>
+                        <span class="ms-2 d-xl-block d-xxl-block d-none wd-float-left">More</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn btn-primary text-white mt-1 wd-btn-radius">Tuit
+                    </div>
+                </div>
             </div>
-            <p class="wd-tuiter-trend-category">Trending in Science</p>
-            <p class="wd-tuiter-trending-name">Starship</p>
-            <p class="wd-tuiter-trend-tweets">55.5K Tweets</p>
-        </div>
 
-        <div class="wd-trending-post wd-tuiter-suggested-post">
-            <div class="wd-tuiter-author-right-end">
-                <span class="wd-dot"></span>
-                <span class="wd-dot"></span>
-                <span class="wd-dot"></span>
+            <div  class="col col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 ps-4 pt-2 pb-2" id="main-content">
+                <div>
+                    <div class="input-group wd-float-left">
+<!--                        <div class="input-group-sm ps-2 pt-1" style="border: 1px solid #dee2e6;border-radius: 20px">-->
+<!--                            <i class="fa fa-search ps-2"></i>-->
+<!--                        </div>-->
+                        <input type="search" placeholder="Search Tuiter"
+                               style="border-left: none;border-radius: 20px" class="ps-3 form-control"/>
+                        <h2 class="fa-solid fa-gear wd-float-right ps-5 text-primary"></h2>
+                    </div>
+                </div>
+
+                <div class="row pt-2">
+                    <ul class="nav nav-tabs col">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="other-pages/for-you.html">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="other-pages/trending.html">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="other-pages/news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="other-pages/sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="other-pages/entertainment.html">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card border-top">
+                    <img src="../images/starship.webp"/>
+                    <h2 class="text-white ps-2" style="margin-top: -40px">SpaceX's Starship</h2>
+
+                    <div class="card-body border-top">
+                        <div class="col wd-float-left col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                            <span class="text-secondary">Web Development</span>
+                            <br/>
+                            <b>ReactJS</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                            <br/>
+                            <span style="font-size: 90%">
+                            <b>
+                                React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                            </b>
+                        </span>
+                        </div>
+                        <div class="wd-float-right">
+                            <img  src="../images/reactjs.png" class="rounded-circle" height="80" width="80"/>
+                        </div>
+                    </div>
+
+                    <div class="card-body border-top ">
+                        <div class="col wd-float-left col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                            <br/>
+                            <b>JavaScript</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                            <br/>
+                            <span style="font-size: 90%">
+                            <b>
+                                JavaSCript is programming language that can run on browsers as well as desktops
+                            </b>
+                        </span>
+                            <br/>
+                            <span class="text-secondary">123K Tweets</span>
+                        </div>
+                        <div class="wd-float-right">
+                            <img  src="../images/js.png" class="rounded-circle" height="80" width="80"/>
+                        </div>
+                    </div>
+
+                    <div class="card-body border-top ">
+                        <div class="col wd-float-left col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                            <span class="text-secondary">Web Development</span>
+                            <br/>
+                            <b>jQuery</b>
+                            <br/>
+                            <span class="text-secondary">123K Tweets</span>
+                        </div>
+                        <div class="wd-float-right">
+                            <img  src="../images/jquery.png" class="rounded-circle" height="80" width="80"/>
+                        </div>
+                    </div>
+
+                    <div class="card-body border-top ">
+                        <div class="col wd-float-left col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                            <span class="text-secondary">Web Development</span>
+                            <br/>
+                            <b>NodeJS</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span class="text-secondary">- 2h</span>
+                            <br/>
+                            <span class="text-secondary">123K Tweets</span>
+                        </div>
+                        <div class="wd-float-right">
+                            <img  src="../images/nodejs.png" class="rounded-circle" height="80" width="80"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="wd-tuiter-trend-category">Sports Trending</p>
-            <p class="wd-tuiter-trending-name">Joe Rogan</p>
-            <p class="wd-tuiter-trend-tweets">5,218 Tweets</p>
-        </div>
-    </div>
 
-    <div class="wd-tuiter-suggested-post" id="D1">
-        <div class="wd-tuiter-author-left-end">
-            <div class="wd-tuiter-trending-page-name">
-                <img src="nyt.png" height="20px" width="20px"/>
-                <span class="wd-tuiter-author-name">The New York Time</span>
-                .
-                <span class="wd-tuiter-author-time">Yesterday</span>
+            <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block d-xl-block d-xxl-block ps-4 pt-2 pb-2" id="suggestions">
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-1 pb-0 rounded-top">
+                        <h8> <b>Who to follow</b></h8>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-2 pb-0 border-top-0">
+                        <img src="../images/java.png" class="rounded-circle wd-float-left" width="40" height="40"/>
+                        <p class="wd-float-left ps-1">
+                            <b>Java</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <br/>
+                            <span>@Java</span>
+                        </p>
+                        <div class="wd-float-right pt-1">
+                            <button class="wd-btn-radius btn btn-primary text-white">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-2 pb-0 border-top-0">
+                        <img src="../images/relativity.png" class="rounded-circle wd-float-left" width="40" height="40"/>
+                        <p class="wd-float-left ps-1">
+                            <b>Relativity Space</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <br/>
+                            <span>@relativityspace</span>
+                        </p>
+                        <div class="wd-float-right pt-1">
+                            <button class="wd-btn-radius btn btn-primary text-white">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-2 pb-0 border-top-0">
+                        <img src="../images/virgingalactic.webp" class="rounded-circle wd-float-left" width="40" height="40"/>
+                        <p class="wd-float-left ps-1">
+                            <b>Virgin Galactic</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <br/>
+                            <span>@virgingalactic</span>
+                        </p>
+                        <div class="wd-float-right pt-1">
+                            <button class="wd-btn-radius btn btn-primary text-white">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-2 pb-0 border-top-0">
+                        <img src="../images/nasa.webp" class="rounded-circle wd-float-left" width="40" height="40"/>
+                        <p class="wd-float-left ps-1">
+                            <b>NASA</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <br/>
+                            <span>@NASA</span>
+                        </p>
+                        <div class="wd-float-right pt-1">
+                            <button class="wd-btn-radius btn btn-primary text-white">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wd-brd ps-3 pt-2 pb-0 border-top-0">
+                        <img src="../images/tesla.png" class="rounded-circle wd-float-left" width="40" height="40"/>
+                        <p class="wd-float-left ps-1">
+                            <b>Tesla</b>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <br/>
+                            <span>@Tesla</span>
+                        </p>
+                        <div class="wd-float-right pt-1">
+                            <button class="wd-btn-radius btn btn-primary text-white">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <p class="wd-tuiter-author-name">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-        </div>
-        <div class="wd-tuiter-author-right-end">
-            <img class="wd-tuiter-author-image" src="nyt_news.jpeg"/>
         </div>
     </div>
-
-    <div class="wd-tuiter-suggested-post" id="E">
-        <div class="wd-tuiter-author-left-end">
-
-            <div class="wd-tuiter-author-time">
-                COVID-19 LIVE
-            </div>
-            <p class="wd-tuiter-author-name">COVID-19: News and updates for Massachusetts</p>
-        </div>
-
-        <div class="wd-tuiter-author-right-end">
-            <img class="wd-tuiter-author-image" src="covid.png"/>
-        </div>
-
-    </div>
-
-    <div class="wd-tuiter-suggested-post" id="E2">
-        <div class="wd-tuiter-author-left-end">
-
-            <div class="wd-tuiter-author-time">
-                Cricket LIVE
-            </div>
-            <p class="wd-tuiter-author-name">Cricket: India vs South Africa T20 Score Updates</p>
-        </div>
-
-        <div class="wd-tuiter-author-right-end">
-            <img class="wd-tuiter-author-image" src="cricket.avif"/>
-        </div>
-
-    </div>
-
-    <div class="wd-tuiter-suggested-post" id="D2">
-        <div class="wd-tuiter-author-left-end">
-            <div class="wd-tuiter-trending-page-name">
-
-                <img src="bloomberg.png" height="20px" width="20px"/>
-                <span class="wd-tuiter-author-name">Bloomberg Opinion</span>
-                .
-                <span class="wd-tuiter-author-time">Yesterday</span>
-            </div>
-            <p class="wd-tuiter-author-name">Thinking about getting a booster? Read this first</p>
-        </div>
-        <div class="wd-tuiter-author-right-end">
-            <img class="wd-tuiter-author-image" src="bloomberg_news.jpeg"/>
-        </div>
-    </div>
-
-    <div class="wd-trending-post wd-tuiter-suggested-post">
-        <p class="wd-tuiter-trend-category">Trending in United States</p>
-        <p class="wd-tuiter-trending-name">Wonder Bread</p>
-        <p class="wd-tuiter-trend-tweets">1,259 Tweets</p>
-    </div>
-
 </body>
 </html>
