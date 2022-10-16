@@ -1,7 +1,6 @@
 const PostSummaryItem = (post) => {
     return(`
-        <div class="row border-start border-end border-top border-bottom wd-border-color-dark-mode wd-font-size 
-        pt-3 pb-3 wd-post-summary-list-font-size">
+        <div class="row border-start border-end border-top border-bottom pt-3 pb-3">
             <div class="col-8">
                 <div class="wd-title pt-1">${post.topic}</div>
                 <div class="wd-float-left wd-bold-text wd-font-color-white">${post.userName}</div>
