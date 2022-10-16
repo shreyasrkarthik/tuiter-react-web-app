@@ -5,7 +5,7 @@ const NavigationSidebar = (active_page) => {
             <i class="fab fa-twitter"></i>
             </a>
                  
-            <a href="../../HomeScreen/index.html" class="list-group-item ${active_page === 'home' ? 'active' : '' }">
+            <a href="../HomeScreen/index.html" class="list-group-item ${active_page === 'home' ? 'active' : '' }">
             <i class="fa fa-home"></i>
             Home
             </a>

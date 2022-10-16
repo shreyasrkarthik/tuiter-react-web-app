@@ -9,7 +9,8 @@ const NavigationSidebar = (active_page) => {
             <i class="fa fa-home"></i>
             Home
             </a>
-            <a href="../../ExploreScreen/index.html" class="list-group-item ${active_page === 'explore' ? 'active' : '' }">
+            <a href="../ExploreScreen/index.html"
+             class="list-group-item ${active_page === 'explore' ? 'active' : '' }">
             <i class="fa fa-hashtag"></i>
             Explore
             </a>
