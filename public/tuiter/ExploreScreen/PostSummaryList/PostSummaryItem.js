@@ -1,7 +1,7 @@
 const PostSummaryItem = (post) => {
     return(`
         <div class="row border-start border-end border-top border-bottom wd-border-color-dark-mode wd-font-size 
-        pt-3 pb-3 wd-post-summary-list-font-size">
+        pt-1 pb-1 wd-post-summary-list-font-size">
             <div class="col-8">
                 <div class="wd-title pt-1">${post.topic}</div>
                 <div class="wd-float-left wd-bold-text wd-font-color-white">${post.userName}</div>
@@ -14,7 +14,7 @@ const PostSummaryItem = (post) => {
             </div>
             <div class="col-4">
                 <img src=${post.image}
-                     class="wd-image-style pt-1"
+                     class="wd-profile-image pt-1"
                      height="80px"
                 />
             </div>

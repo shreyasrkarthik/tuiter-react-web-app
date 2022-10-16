@@ -18,5 +18,5 @@ function exploreComponent() {
         </div>
     </div>
     `);
-    }
+}
 $(exploreComponent);

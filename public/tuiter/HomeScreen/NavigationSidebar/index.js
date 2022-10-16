@@ -1,15 +1,15 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active_page) => {
     return(`
        <div class="list-group d-none d-lg-block">
             <a class="list-group-item" href="#">
             <i class="fab fa-twitter"></i>
             </a>
                  
-            <a href="#" class="list-group-item">
+            <a href="#" class="list-group-item ${active_page === 'home' ? 'active' : '' }">
             <i class="fa fa-home"></i>
             Home
             </a>
-            <a href="#" class="list-group-item active">
+            <a href="../../ExploreScreen/index.html" class="list-group-item ${active_page === 'explore' ? 'active' : '' }">
             <i class="fa fa-hashtag"></i>
             Explore
             </a>
