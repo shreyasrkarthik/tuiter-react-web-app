@@ -8,8 +8,17 @@
 
 .wd-float-left {
     float: left;
+    padding-right: 5px;
 }
 
 .wd-float-right {
     float: right;
+}
+
+.wd-title {
+    color: rgb(110, 118, 125);
+}
+
+.wd-bold-text {
+    font-weight: bold;
 }
