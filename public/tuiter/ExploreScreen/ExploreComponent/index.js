@@ -1,6 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index.js";
 
-const Index = () => {
+const PostSummary = () => {
     return(`
     <div class="row">
         <div class="col-10">
@@ -104,4 +104,4 @@ const Index = () => {
         ${PostSummaryList()}
     `);
 }
-export default Index;
+export default PostSummary;
