@@ -1,0 +1,40 @@
+.wd-brd {
+    border: 1px solid #dee2e6;
+}
+
+.wd-btn-radius {
+    border-radius: 20px;
+}
+
+.wd-float-left {
+    float: left;
+    padding-right: 5px;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-title {
+    color: rgb(110, 118, 125);
+}
+
+.wd-bold-text {
+    font-weight: bold;
+}
+
+.wd-profile-image {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.wd-post-image {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.wd-hyperlink-grey {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
