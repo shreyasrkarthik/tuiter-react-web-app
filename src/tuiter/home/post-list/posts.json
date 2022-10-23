@@ -5,7 +5,7 @@
     "handle": "elonmusk",
     "time": "23h",
     "tagline": "Amazing show about @Inspiration4x  mission!",
-    "profileImage": "/Users/srk/NU/SEM4/WebDev/projects/tuiter-react-web-app/src/tuiter/home/post-list/images/image1.jpg",
+    "profileImage": "images/image1.jpg",
     "descriptionImage": "images/image1.jpg",
     "topic": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
     "description": "From training to launch to landing, this all-access docuseries  rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
