@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import NavigationSidebar from "./navigation-sidebar";
 import {Route, Routes} from "react-router";
+import WhoToFollowList from "./who-to-follow-list";
 
 function Tuiter() {
     return (
@@ -18,7 +19,7 @@ function Tuiter() {
 
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                {/*<WhoToFollowList />*/}
+                <WhoToFollowList />
             </div>
 
         </div>
