@@ -1,0 +1,15 @@
+{
+  "firstName": "Bruce",
+  "lastName": "Wayne",
+  "handle": "batman",
+  "profilePicture": "nodejs.png",
+  "bannerPicture": "./nodejs.png",
+  "bio": "I am superhero",
+  "website": "batman.com",
+  "location": "Boston, MA",
+  "dateOfBirth": "June 4, 1956 ",
+  "dateJoined": "December 12, 2021",
+  "followingCount": 1,
+  "followersCount": "150.2K",
+  "numberOfTweets": "204"
+}
