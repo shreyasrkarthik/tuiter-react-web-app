@@ -1,103 +1,141 @@
 import React, {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 import './index.css';
-import {useSelector} from "react-redux";
-import {useDispatch} from "react-redux";
 import {updateProfile} from "../profile/profile-reducer";
 
-const profileData = (state) => state.profile;
-
 const EditPage = () => {
-    const profile = useSelector(state => state.profile);
+    const profileArray = useSelector(state => state.profile);
+    console.log("Edit Profile")
+    console.log(profileArray)
     const dispatch = useDispatch();
+    const [editDOBBtn, setEditDOBBtn] = useState(false);
+    const [profileData, setProfileData] = useState({
+        name: profileArray.name,
+        handle: profileArray.handle,
+        profilePicture: profileArray.profilePicture,
+        bannerPicture: profileArray.bannerPicture,
+        bio: profileArray.bio,
+        website: profileArray.website,
+        location: profileArray.location,
+        dateOfBirth: profileArray.dateOfBirth,
+        dateJoined: profileArray.dateJoined,
+        numberOfTuits: profileArray.numberOfTuits,
+        followingCount: profileArray.followingCount,
+        followersCount: profileArray.followersCount
+    });
 
-    const [firstName, setFirstName] = useState(profile["firstName"]);
-    const [lastName, setLastName] = useState(profile["lastName"]);
-    const [bio, setBio] = useState(profile["bio"]);
-    const [location, setLocation] = useState(profile["location"]);
-    const [website, setWebsite] = useState(profile["website"]);
-    const [birthDate, setBirthdate] = useState(profile["dateOfBirth"]);
+    const changeProfileData = event => {
+        setProfileData({
+            ...profileData,
+            [event.target.name]: event.target.value
+        });
+    };
 
-    const saveUserProfileDetails = () => {
-        profile["firstName"] = firstName;
-        profile["lastName"] = lastName;
-        profile["bio"] = bio;
-        profile["location"] = location;
-        profile["website"] = website;
-        profile["dateOfBirth"] = birthDate;
-        dispatch(updateProfile(profile));
+    const updateProfileData = () => {
+        dispatch(updateProfile(profileData));
+    };
+
+    const changeDOB = () => {
+        setEditDOBBtn(!editDOBBtn);
     }
 
-    return(
+    return (
         <div>
             <div className="row">
-                <div className="row pt-2 wd-data-font-size">
-                    <span className="bi bi-mu wd-color-white col-1 pt-2"></span>
-                    <span className="wd-font-color-white fw-bold wd-title-font-size float-left col-9">Edit Profile</span>
-                    <span className="row wd-font-color-grey float-left col-2">
-                      <button className="btn wd-save-page-style rounded-pill border fw-bold wd-font-color-white float-left" onClick={saveUserProfileDetails}>Save</button>
-                  </span>
+                <div className="col-2 mt-2 float-start">
+                    <Link to="/tuiter/profile">
+                        <i className="bi bi-x-lg"></i>
+                    </Link>
                 </div>
-            </div>
-
-            <div className="pt-2"></div>
-            <img src={profile["bannerPicture"]}
-                 className="profile-banner"
-                 width={650}
-             alt={"banner"}/>
-
-            <div className="col-sm-3 avatar-container">
-                <img src={profile["profilePicture"]} className="rounded-circle profile-avatar" alt="User avatar"/>
-            </div>
-
-            {/*<div className="row pt-3">*/}
-            {/*    <img src="https://medhaavi.in/wp-content/uploads/2020/07/1_jd8ZKUWtY1AOMwz2CvZG8A.jpg"*/}
-            {/*         height={200}*/}
-            {/*    />*/}
-            {/*</div>*/}
-
-            {/*<div className="row">*/}
-            {/*    <img className="imgB1 col-3 rounded-circle pull-left" src="https://i.dailymail.co.uk/i/pix/2014/03/26/article-0-1C91BEE700000578-336_306x393.jpg"/>*/}
-            {/*</div>*/}
-
-            <div className="pt-5"></div>
-            <div className="pt-5"></div>
-            <div className="pt-2"></div>
-            <div className="row border rounded">
-                <div className="wd-text-color-grey wd-input-text">Name</div>
-                <input className="col-6 wd-form-background wd-text-color-white wd-border-black wd-user-input" type="text" placeholder="Enter first name" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
-                <input className="col-6 wd-form-background wd-text-color-white wd-border-black wd-user-input" type="text" placeholder="Enter last name" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
-            </div>
-
-            <div className="pt-3"></div>
-            <div className="row border rounded">
-                <div className="wd-text-color-grey wd-input-text">Bio</div>
-                <textarea className="wd-form-background wd-text-color-white wd-border-black wd-user-input" placeholder="Enter bio" value={bio} onChange={(e) => setBio(e.target.value)}/>
-            </div>
-
-            <div className="pt-3"></div>
-            <div className="row border rounded">
-                <div className="wd-text-color-grey wd-input-text">Location</div>
-                <input className="wd-form-background wd-text-color-white wd-border-black wd-user-input" type="text" placeholder="Enter location" value={location} onChange={(e) => setLocation(e.target.value)}/>
-            </div>
-
-            <div className="pt-3"></div>
-            <div className="row border rounded">
-                <div className="wd-text-color-grey wd-input-text">Website</div>
-                <input className="wd-form-background wd-text-color-white wd-border-black wd-user-input" type="text" value={website} onChange={(e) => setWebsite(e.target.value)}/>
-            </div>
-
-            <div className="pt-3"></div>
-            <div className="row">
-                <div>
-                    <span className="wd-text-color-grey wd-input-text">Birth Date</span>
-                    <a className="float-right ps-2 wd-remove-underline" href="#">Edit</a>
+                <div className="col-8 mt-2 ">
+                    <div className="fw-bold">
+                        Edit Profile
+                    </div>
+                </div>
+                <div className="col-2 float-end">
+                    <Link to="/tuiter/profile">
+                        <button
+                            className="btn btn-md btn-primary rounded-pill text-white"
+                            onClick={updateProfileData}>
+                            Save
+                        </button>
+                    </Link>
                 </div>
 
-                <input className="wd-form-background wd-text-color-white wd-border-black wd-user-input" type="text" placeholder="Enter birth date" value={birthDate} onChange={(e) => setBirthdate(e.target.value)}/>
             </div>
+            <div className="wd-profile-details ms-3">
+                <form id="profile-fields">
+                    <div>
+                        <label className="ms-2 text-secondary wd-labels-edit" htmlFor="name">Name</label>
+                        <input id="name"
+                               defaultValue={profileData.name}
+                               className="form-control mt-4 wd-edit-field-boxes"
+                               onChange={changeProfileData}  style={{ padding: '20px 5px' }}
+                        />
+                    </div>
+                    <div>
+                        <label className="ms-2 text-secondary wd-labels-edit" htmlFor="name">Handle</label>
+                        <input id="handle"
+                               defaultValue={profileData.handle}
+                               className="form-control mt-4 wd-edit-field-boxes"
+                               onChange={changeProfileData}  style={{ padding: '20px 5px' }}
+                        />
+                    </div>
+                    <div className="mt-4">
+                        {editDOBBtn ?
+                            <>
+                                <label htmlFor="dateOfBirth">
+                                    Birth date
+                                </label>
+                                <input type="date"
+                                       id="dateOfBirth"
+                                       className="form-control"
+                                       defaultValue={profileData.dateOfBirth}
+                                       onChange={changeProfileData}/>
+                                <label className="text-primary" onClick={changeDOB}>Done</label>
+                            </>
+                            :
+                            <span>
+                                <label htmlFor="dateOfBirth">
+                                Birth date
+                                </label>
+                                    <i className="bi bi-dot"></i>
+                                <label className="text-primary" onClick={changeDOB}>Edit</label>
+                                </span>
+                        }
+                        <div>{profileData.dateOfBirth}</div>
+                    </div>
+                    <div>
+                        <label className="ms-2 text-secondary wd-labels-edit" htmlFor="bio">Bio</label>
+                        <input id="bio"
+                               defaultValue={profileData.bio}
+                               className="form-control mt-4"
+                               onChange={changeProfileData} style={{ padding: '20px 5px' }}
+                        />
+                    </div>
+                    <div>
+                        <label className="ms-2 text-secondary wd-labels-edit" htmlFor="website">Website</label>
+                        <input id="website"
+                               defaultValue={profileData.website}
+                               className="form-control mt-4"
+                               onChange={changeProfileData} style={{ padding: '20px 5px' }}
+                        />
+                    </div>
+                    <div>
+                        <label className="ms-2 text-secondary wd-labels-edit" htmlFor="location">Location</label>
+                        <input id="location"
+                               defaultValue={profileData.location}
+                               className="form-control mt-4"
+                               onChange={changeProfileData} style={{ padding: '20px 5px' }}
+                        />
+                    </div>
 
+
+                </form>
+            </div>
         </div>
-    );
+    )
 }
 
 export default EditPage;

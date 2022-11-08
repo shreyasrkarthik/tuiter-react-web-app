@@ -9,6 +9,7 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import profileReducer from "./profile/profile-reducer";
+import EditProfileScreen from "./edit-profile";
 
 
 const store = configureStore(
@@ -29,6 +30,7 @@ function Tuiter() {
                         <Route path="home" element={<HomeComponent />} />
                         <Route path="explore" element={<ExploreComponent />} />
                         <Route path="profile" element={<ProfileComponent />} />
+                        <Route path="edit-profile" element={<EditProfileScreen/>} />
                     </Routes>
 
                 </div>

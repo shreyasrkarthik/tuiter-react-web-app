@@ -1,6 +1,5 @@
 {
-  "firstName": "Bruce",
-  "lastName": "Wayne",
+  "name": "Bruce Wayne",
   "handle": "batman",
   "profilePicture": "nodejs.png",
   "bannerPicture": "./nodejs.png",
@@ -11,5 +10,5 @@
   "dateJoined": "December 12, 2021",
   "followingCount": 1,
   "followersCount": "150.2K",
-  "numberOfTweets": "204"
+  "numberOfTuits": "204"
 }

@@ -1,32 +1,4 @@
-.wd-input-text {
-    font-size: 16px;
-}
-
-.wd-user-input {
-    font-size: 18px;
-}
-
-.wd-form-background {
-    background-color: black;
-}
-
-.wd-text-color-white {
-    color: white;
-}
-
-.wd-remove-underline {
-    text-decoration: none;
-}
-
-.wd-text-color-grey {
-    color: rgb(110, 118, 125);
-}
-
-
-.wd-color-white {
-    color: white;
-}
-
-.wd-border-black {
-    border: black;
+.wd-labels-edit {
+    position: absolute;
+    font-size: 12px;
 }
