@@ -1,7 +1,8 @@
 import PostSummaryItem from "./post-summary-item";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import posts from "./posts.json"
 const PostSummaryList = () => {
-    const posts = useSelector(state => state.tuits);
+    // const posts = useSelector(state => state.tuits);
     return (
         <ul className="list-group">
             {

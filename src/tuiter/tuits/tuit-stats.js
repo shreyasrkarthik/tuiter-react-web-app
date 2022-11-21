@@ -47,7 +47,7 @@ const TuitStats = ({ stats }) => {
                     <i className="bi bi-repeat"></i> {stats.retuits}
                 </li>
                 <li className="nav-item">
-                    <span style={{ marginRight: '5px' }}>  <i className={isLiked ? "bi bi-heart-fill text-danger" : "bi bi-heart"} onClick={likeHandler}></i></span>{stats.likes}
+                    <span style={{ marginRight: '5px' }}>  <i className={isLiked ? "bi bi-hand-thumbs-up-fill text-danger" : "bi bi-hand-thumbs-up-fill"} onClick={likeHandler}></i></span>{stats.likes}
                 </li>
                 <li className="nav-item">
                     <span style={{ marginRight: '5px' }}>  <i className={isDisliked ? "bi bi-hand-thumbs-down-fill text-danger" : "bi bi-hand-thumbs-down-fill "} onClick={disLikeHandler}></i></span>{stats.dislikes}
