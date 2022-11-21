@@ -7,10 +7,12 @@
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "descriptionImage": "nodejs.png",
     "liked": true,
+    "disliked": false,
     "profileImage": "nodejs.png",
-    "commentsCount": 123,
-    "retuitsCount": 432,
-    "likesCount": "2.3K",
+    "comments": 123,
+    "retuits": 432,
+    "likes": 2300,
+    "dislikes": 100,
     "handle": "@spacex",
     "description": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   },
@@ -20,15 +22,18 @@
     "handle": "elonmusk",
     "time": "23h",
     "tagline": "Amazing show about @Inspiration4x  mission!",
+    "liked": false,
+    "disliked": true,
     "profileImage": "tesla.png",
     "descriptionImage": "tesla.png",
     "topic": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
     "description": "From training to launch to landing, this all-access docuseries  rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
     "link": "https://www.netflix.com/",
     "linkText": "netflix.com",
-    "commentsCount": "42.K",
-    "retuitsCount": "3.5K",
-    "likesCount": "37.5K"
+    "comments": 4732,
+    "retuits": 2367,
+    "likes":37500,
+    "dislikes": 123
   },
   {
     "_id": 2,
@@ -42,8 +47,11 @@
     "description": "",
     "link": "",
     "linkText": "",
-    "commentsCount": "965",
-    "retuitsCount": "2.4K",
-    "likesCount": "4K"
+    "comments": 965,
+    "retuits": 2234,
+    "liked": false,
+    "disliked": true,
+    "likes": 4123,
+    "dislikes": 18901
   }
 ]

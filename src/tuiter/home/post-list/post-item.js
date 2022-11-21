@@ -26,13 +26,13 @@ const PostItem = ({ post }) => {
             </div>
             <ul className="nav nav-fill mt-2 text-secondary">
                 <li className="nav-item">
-                    <i className="bi bi-chat-left-dots"></i> {post.commentsCount}
+                    <i className="bi bi-chat-left-dots"></i> {post.comments}
                 </li>
                 <li className="nav-item">
-                    <i className="bi bi-repeat"></i> {post.retuitsCount}
+                    <i className="bi bi-repeat"></i> {post.retuits}
                 </li>
                 <li className="nav-item">
-                    <i className="bi bi-heart-fill"></i> {post.likesCount}
+                    <i className="bi bi-heart-fill"></i> {post.likes}
                 </li>
                 <li className="nav-item">
                     <i className="bi bi-upload"></i>
