@@ -22,6 +22,6 @@ export const createTuit = async (tuit) => {
 }
 
 export const updateTuit = async (tuit) => {
-    await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
+    await axios.put(`${TUITS_API}/${tuit.id}`, tuit);
     return tuit;
 }

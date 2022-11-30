@@ -33,6 +33,7 @@ const EditPage = () => {
     };
 
     const updateProfileData = () => {
+        console.log(profileData);
         dispatch(updateProfile(profileData));
     };
 
@@ -69,6 +70,7 @@ const EditPage = () => {
                     <div>
                         <label className="ms-2 text-secondary wd-labels-edit" htmlFor="name">Name</label>
                         <input id="name"
+                               name="name"
                                defaultValue={profileData.name}
                                className="form-control mt-4 wd-edit-field-boxes"
                                onChange={changeProfileData}  style={{ padding: '20px 5px' }}
@@ -77,6 +79,7 @@ const EditPage = () => {
                     <div>
                         <label className="ms-2 text-secondary wd-labels-edit" htmlFor="name">Handle</label>
                         <input id="handle"
+                               name="handle"
                                defaultValue={profileData.handle}
                                className="form-control mt-4 wd-edit-field-boxes"
                                onChange={changeProfileData}  style={{ padding: '20px 5px' }}
@@ -90,6 +93,7 @@ const EditPage = () => {
                                 </label>
                                 <input type="date"
                                        id="dateOfBirth"
+                                       name="dateOfBirth"
                                        className="form-control"
                                        defaultValue={profileData.dateOfBirth}
                                        onChange={changeProfileData}/>
@@ -109,6 +113,7 @@ const EditPage = () => {
                     <div>
                         <label className="ms-2 text-secondary wd-labels-edit" htmlFor="bio">Bio</label>
                         <input id="bio"
+                               name="bio"
                                defaultValue={profileData.bio}
                                className="form-control mt-4"
                                onChange={changeProfileData} style={{ padding: '20px 5px' }}
@@ -117,6 +122,7 @@ const EditPage = () => {
                     <div>
                         <label className="ms-2 text-secondary wd-labels-edit" htmlFor="website">Website</label>
                         <input id="website"
+                               name="website"
                                defaultValue={profileData.website}
                                className="form-control mt-4"
                                onChange={changeProfileData} style={{ padding: '20px 5px' }}
@@ -125,13 +131,12 @@ const EditPage = () => {
                     <div>
                         <label className="ms-2 text-secondary wd-labels-edit" htmlFor="location">Location</label>
                         <input id="location"
+                               name="location"
                                defaultValue={profileData.location}
                                className="form-control mt-4"
                                onChange={changeProfileData} style={{ padding: '20px 5px' }}
                         />
                     </div>
-
-
                 </form>
             </div>
         </div>
