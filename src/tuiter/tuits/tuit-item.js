@@ -24,7 +24,7 @@ const TuitItem = ({ tuit }) => {
                         {tuit.handle} . {tuit.time}
                     </span>
                     <i className="bi bi-x-lg float-end"
-                       onClick={() => deleteTuitHandler(tuit._id)}></i>
+                       onClick={() => deleteTuitHandler(tuit.id)}></i>
                     <br />
                     {tuit.description}
                     <img src={`images/${tuit.descriptionImage}`} style={{ height: '400px' }} className="img-fluid img-size rounded-circle" alt="avatar" />

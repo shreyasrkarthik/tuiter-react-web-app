@@ -7,6 +7,7 @@ const TuitsList = () => {
     const {tuits, loading} = useSelector(state => state.tuitsData);
     const dispatch = useDispatch();
     useEffect(() => {
+        console.log(tuits)
         dispatch(findTuitsThunk())
     }, [])
 
@@ -23,7 +24,7 @@ const TuitsList = () => {
                 tuits.map((tuit) => (
 
                     <div>
-                        <TuitItem tuit={tuit} key={tuit._id} />
+                        <TuitItem tuit={tuit} key={tuit.id} />
                     </div>
                 ))}
         </ul>
